@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Baseado no artigo: Integração com IA generativa no desenvolvimento de software">
+    <meta name="description" content="Site-resumo sobre o impacto da Inteligência Artificial Generativa na Engenharia de Software: ferramentas, produtividade, riscos e conclusões.">
+    <meta name="keywords" content="Inteligência Artificial, IA Generativa, GitHub Copilot, ChatGPT, Engenharia de Software, Produtividade, LLM">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>IA Generativa no Desenvolvimento de Software</title>
+</head>
+
+<body>
+    <header class="header-1">
+        <nav class="nav bd-grid">
+            <div>
+                <a href="#home" class="nav-logo">IA Generativa &amp; Software</a>
+            </div>
+
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link active">Início</a></li>
+                    <li class="nav-item"><a href="#intro" class="nav-link">Introdução</a></li>
+                    <li class="nav-item"><a href="#ecosystem" class="nav-link">Ecossistema</a></li>
+                    <li class="nav-item"><a href="#productivity" class="nav-link">Produtividade</a></li>
+                    <li class="nav-item"><a href="#challenges" class="nav-link">Desafios</a></li>
+                    <li class="nav-item"><a href="#conclusion" class="nav-link">Conclusão</a></li>
+                    <li class="nav-item"><a href="#references" class="nav-link">Referências</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HOME -->
+        <section class="home bd-grid" id="home">
+            <div class="home-data">
+                <h1 class="home-title">O Impacto da <br>
+                    <span class="home-title-color">Inteligência Artificial Generativa</span><br>
+                    na Engenharia de Software
+                </h1>
+                <a href="#intro" class="button">Ler o resumo</a>
+            </div>
+
+            <div class="home-img">
+                <svg width="280" height="280" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ícone representando código e IA">
+                    <circle cx="140" cy="140" r="130" fill="#f2edfc" />
+                    <rect x="70" y="90" width="140" height="100" rx="10" fill="#8257E5" />
+                    <rect x="85" y="105" width="110" height="70" rx="4" fill="#ffffff" />
+                    <text x="140" y="150" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="bold" fill="#8257E5" text-anchor="middle">&lt;/AI&gt;</text>
+                </svg>
+            </div>
+        </section>
+
+        <!-- INTRODUÇÃO -->
+        <section class="about section" id="intro">
+            <h2 class="section-title">Introdução</h2>
+            <div class="about-container bd-grid">
+                <div>
+                    <h2 class="about-subtitle">Uma mudança de paradigma</h2>
+                    <p class="about-text">
+                        A Inteligência Artificial Generativa (IAG) consolidou-se como uma força disruptiva
+                        sem precedentes na engenharia de software, deslocando o eixo do desenvolvimento manual
+                        para um modelo assistido. Compreender essa transição é imperativo para a manutenção
+                        da competitividade organizacional, exigindo uma visão sistêmica que vai além da
+                        simples adoção de ferramentas.
+                    </p>
+                    <p class="about-text">
+                        Este resumo examina ferramentas como GitHub Copilot e ChatGPT, avaliando o potencial
+                        de otimização do ciclo de vida de desenvolvimento, sem negligenciar os riscos críticos
+                        de segurança, integridade técnica e conformidade legal.
+                    </p>
+
+                    <br>
+                    <h3>Ideia Central</h3>
+                    <q>A IA não substitui o engenheiro de software; ela o redefine.</q>
+                    <blockquote cite="Integração com IA generativa no desenvolvimento de software.docx">
+                        A abordagem "human-in-the-loop" é o único caminho viável para uma transformação
+                        digital sustentável, onde a máquina atua como copiloto e o humano detém o
+                        discernimento ético, arquitetural e técnico final.
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <!-- ECOSSISTEMA -->
+        <section class="formation section" id="ecosystem">
+            <h2 class="section-title">Ecossistema Tecnológico</h2>
+            <div class="formation-container bd-grid">
+                <h3><u>Principais Ferramentas e Modelos</u></h3>
+                <ol>
+                    <li><strong>GitHub Copilot</strong> — assistente de codificação em tempo real (modelo Codex) para sugestões contextuais na IDE.</li>
+                    <li><strong>ChatGPT (OpenAI)</strong> — refatoração complexa, explicação de lógica legada e geração de algoritmos via chat.</li>
+                    <li><strong>CodeT5</strong> — modelo "identifier-aware", com forte compreensão de nomes de variáveis e funções.</li>
+                    <li><strong>AlphaCode</strong> — desempenho competitivo em maratonas de programação, resolvendo problemas inéditos.</li>
+                    <li><strong>CodeBERT / GraphCodeBERT</strong> — representação de código com fluxo de dados para busca e análise semântica.</li>
+                    <li><strong>Amazon CodeWhisperer</strong> — otimizado para infraestrutura em nuvem, com foco em segurança na AWS.</li>
+                </ol>
+                <br>
+                <h3><u>Arquitetura e Funcionamento</u></h3>
+                <p>
+                    A eficácia dessas ferramentas está na arquitetura Transformer, que processa longas
+                    sequências de código e entende contextos globais. O pré-treinamento em larga escala é
+                    sustentado por datasets massivos como "The Stack" (~3 TB de código sob licenciamento
+                    permissivo), permitindo que a IA decodifique múltiplos paradigmas e linguagens.
+                </p>
+            </div>
+        </section>
+
+        <!-- PRODUTIVIDADE -->
+        <section class="skills section" id="productivity">
+            <h2 class="section-title">Impactos na Produtividade</h2>
+            <div class="skills-container bd-grid">
+                <div>
+                    <h2 class="skills-subtitle">Otimização do Ciclo de Desenvolvimento</h2>
+                    <p class="skills-text">
+                        A produtividade não deve ser medida pelo volume de linhas de código, mas pela
+                        otimização do <strong>Ciclo de Vida de Desenvolvimento de Software (SDLC)</strong>.
+                        A IAG reduz o esforço cognitivo em tarefas de baixo valor, permitindo que o
+                        desenvolvedor atue mais como <i>arquiteto e revisor</i> do que como digitador de sintaxe.
+                    </p>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>Redução no tempo de conclusão de tarefas</p>
+                        </div>
+                        <div class="skills-bar skills-html"></div>
+                        <div>
+                            <span class="skills-percentage">55%</span>
+                        </div>
+                    </div>
+
+                    <div class="skills-data">
+                        <div class="skills-names">
+                            <p>Ganho em Developer Experience (DevEx)</p>
+                        </div>
+                        <div class="skills-bar skills-js"></div>
+                        <div>
+                            <span class="skills-percentage">70%</span>
+                        </div>
+                    </div>
+
+                    <h3>Pilares da Automação</h3>
+                    <dl>
+                        <dt><em>Redução de Boilerplate</em></dt>
+                        <dd>Automação de padrões repetitivos e código de infraestrutura, acelerando o setup de novas funcionalidades.</dd>
+                        <dt><em>Documentação Dinâmica</em></dt>
+                        <dd>Geração automatizada de documentação técnica, mitigando gargalos de manutenção em sistemas legados.</dd>
+                        <dt><em>Qualidade e Testes</em></dt>
+                        <dd>Criação automatizada de testes unitários e de integração, elevando a cobertura e a detecção precoce de falhas.</dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+
+        <!-- DESAFIOS -->
+        <section class="projects section" id="challenges">
+            <h2 class="section-title">Desafios Estruturais, Éticos e de Segurança</h2>
+            <div class="projects-text">
+                <h3>Tabela de Riscos e Recomendações</h3>
+                <br>
+                <table class="projects-table">
+                    <thead>
+                        <tr>
+                            <th>Desafio</th>
+                            <th>Descrição</th>
+                            <th>Recomendação Estratégica</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segurança e Qualidade</td>
+                            <td>Código funcional pode conter vulnerabilidades ou clones de falhas conhecidas.</td>
+                            <td>Protocolos de Policy-as-Code e revisões SAST/DAST no pipeline de CI/CD.</td>
+                        </tr>
+                        <tr>
+                            <td>Propriedade Intelectual</td>
+                            <td>Treinamento em repositórios públicos levanta questões de direitos autorais e licenças copyleft.</td>
+                            <td>Governança com auditorias de licenciamento e filtragem de sugestões restritivas.</td>
+                        </tr>
+                        <tr>
+                            <td>Atrofia de Habilidades</td>
+                            <td>Dependência excessiva pode prejudicar a resolução de problemas de baixo nível.</td>
+                            <td>Pair Programming e revisões manuais focadas no ensino da lógica subjacente.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- CONCLUSÃO -->
+        <section class="about section" id="conclusion">
+            <h2 class="section-title">Conclusão e Perspectivas Futuras</h2>
+            <div class="about-container bd-grid">
+                <div>
+                    <h2 class="about-subtitle">Automação com supervisão humana</h2>
+                    <p class="about-text">
+                        Os ganhos de produtividade de até 55% no tempo de execução de tarefas demonstram um
+                        potencial disruptivo inegável. Contudo, o sucesso dessa integração depende do
+                        equilíbrio entre a potência da automação e o rigor da supervisão.
+                    </p>
+                    <p class="about-text">
+                        As organizações que prosperarão serão aquelas que utilizarem a IAG para reduzir a
+                        carga cognitiva de seus talentos, enquanto fortalecem a segurança do código e
+                        preservam o capital intelectual humano como pilar central.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- REFERÊNCIAS -->
+        <section class="formation section" id="references">
+            <h2 class="section-title">Referências</h2>
+            <div class="formation-container bd-grid">
+                <ol>
+                    <li>Dohmke, T. (2023). GitHub Copilot: Enhancing developer productivity.</li>
+                    <li>Butterick, M. (2022). GitHub Copilot litigation.</li>
+                    <li>Pearce, H. et al. (2022). Asleep at the keyboard? Assessing the security of GitHub Copilot's code contributions.</li>
+                    <li>Vaswani, A. et al. (2017). Attention is all you need.</li>
+                    <li>Kocetkov, D. et al. (2022). The Stack: 3 TB of permissively licensed source code.</li>
+                    <li>Wang, Y. et al. (2021). CodeT5: Identifier-aware unified pre-trained encoder-decoder models.</li>
+                    <li>Pinheiro, J. H. S. (2025). Inteligência Artificial Generativa na Transformação dos Processos de Desenvolvimento de Software. Aurum Revista Multidisciplinar.</li>
+                </ol>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p id="footer-title">Resumo baseado no artigo "Integração com IA generativa no desenvolvimento de software"</p>
+        <p>&copy; Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

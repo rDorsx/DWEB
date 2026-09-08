@@ -1,0 +1,381 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --corprincipal: #F7F8FA;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Inter, Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: var(--corprincipal);
+    min-width: 320px;
+    /* limite diminuicao tela */
+
+}
+
+/* classe usada em várias partes do HTML 
+navegacao, seção home, containers do about, formation, skills, projects, contato */
+.bd-grid {
+    display: grid;
+    
+    /*grid-template-columns: nº colunas do  o seu container 
+repeat(12, ...): Em vez de você escrever a mesma medida 12 vezes, é o mesmo que escrever 1fr 1fr 1fr... doze vezes seguidas.
+1fr: significa "fractional unit" (unidade fracionária), diz ao navegador para ocupar uma parte do espaço disponível */
+    grid-template-columns: repeat(12, 1fr);
+    max-width: 960px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+
+.header-1 {
+    background: #333;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    width: 100%;
+    /*1fr (Fractional Unit) - medida flexível 
+     todo espaco que sobrar
+     depois que posicionar outros elementos)
+     auto - tamanho do conteúdo que está dentro da coluna
+     */
+}
+
+
+.nav-logo {
+    color: var(--corprincipal);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+}
+
+.nav-list {
+    justify-self: end;
+}
+
+.nav-list {
+    list-style: none;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 20px;
+}
+
+.nav-link {
+    color: var(--corprincipal);
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #906ce4;
+    background: #555;
+    border-radius: 3px;
+}
+
+
+section {
+    padding: 80px 0;
+    max-width: 960px;
+    margin: 0 auto;
+    scroll-margin-top: 60px;
+    /* evita que o header fixo (60px) cubra o topo da seção ao navegar pela âncora */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #8257E5;
+}
+
+.home {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.home-title-color {
+    color: #8257E5;
+}
+
+.home-img {
+    text-align: center;
+}
+
+.home-img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.button {
+    display: inline-block;
+    background: #8257E5;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+/* DWEB NOTURNO - 28/08 */
+.button:hover {
+    background: #0056b3;
+}
+
+.about {
+    text-align: center;
+}
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-subtitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.about-text {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.formation {
+    text-align: center;
+}
+
+.formation-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.formation-container h3 {
+    margin-bottom: 10px;
+}
+
+.formation-container p,
+.formation-container ol {
+    margin-bottom: 20px;
+}
+
+.formation-container ol {
+    padding-left: 40px;
+}
+
+.skills {
+    text-align: center;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.skills-subtitle {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.skills-text {
+    margin-bottom: 30px;
+}
+
+.skills-data {
+    margin-bottom: 15px;
+    position: relative;
+    padding-right: 60px;
+}
+
+.skills-bar {
+    height: 20px;
+    background: #e0e0e0;
+    border-radius: 10px;
+}
+
+.skills-html {
+    width: 80%;
+    background: #8257E5;
+}
+
+.skills-css {
+    width: 75%;
+    background: #8257E5;
+}
+
+.skills-js {
+    width: 70%;
+    background: #8257E5;
+}
+
+.skills-percentage {
+    position: absolute;
+    right: 0;
+    top: 0;
+    line-height: 20px;
+    font-weight: bold;
+}
+
+.projects {
+    text-align: center;
+}
+
+.projects-text {
+    max-width: 800px;
+    margin: 0 auto 40px auto;
+}
+
+.projects-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.projects-table th,
+.projects-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+.projects-table th {
+    background: #f2f2f2;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.projects-img img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+.projects-img figcaption {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 500px;
+    margin: 0 auto;
+    justify-items: center;
+}
+
+.contact-container img {
+    transition: transform .1s;
+}
+
+.contact-container img:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+#footer-title {
+    color: #e58d57;
+}
+
+/* telas maiores que 768px */
+
+@media (max-width:768px) {
+
+    .header-1 {
+        height: auto;
+        min-height: 60px;
+    }
+
+    .nav {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 10px;
+        padding: 10px 0;
+    }
+
+    .nav-list {
+        justify-self: center;
+    }
+
+    .bd-grid {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .home {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .nav-list {
+        grid-auto-flow: row;
+        text-align: center;
+    }
+
+}
