@@ -1,0 +1,79 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+div{
+    background-color: dimgray;
+    width: 500px;
+    height: 500px;
+    justify-content:center;
+    align-items: center;
+    display:flex;
+    h2::before{
+        content:"Sem Cor";
+    }
+}
+
+@media (max-width:420px){
+    div{ 
+        background-color: rgb(24, 24, 91);
+        h2::before{
+            content:"AZUL ESCURO (420px)";
+        }
+    }
+}
+
+@media (min-width:421px) and (max-width:768px){
+    div{ 
+        background-color: rgb(214, 143, 10);
+        h2::before{
+            content:"LARANJITA (768px)";
+        }
+    }
+}
+
+@media (min-width:769px) and (max-width:1024px){
+    div{ 
+        background-color: rgb(236, 7, 202);
+        h2::before{
+            content:"ROSA PINK (1024px)";
+        }
+    }
+}
+
+@media (min-width:1025px) and (max-width:1080px){
+    div{ 
+        background-color: rgb(199, 2, 52);
+        h2::before{
+            content:"VERMELHO MEI ROSA (1080px)";
+        }
+    }
+}
+
+@media (min-width:1081px) and (max-width:1366px){
+    div{ 
+        background-color: rgb(123, 12, 167);
+        h2::before{
+            content:"VIOLENTA (1366px)";
+        }
+    }
+}
+
+@media (min-width:1367px) and (max-width:1920px){
+    div{ 
+        background-color: rgb(255, 230, 0);
+        h2::before{
+            content:"AMARELÃO (1920px)";
+        }
+    }
+}
+
+@media (min-width:1921px){
+    div{ 
+        background-color: rgb(7, 151, 55);
+        h2::before{
+            content:"VERDE(+1920px)";
+        }
+    }
+}
