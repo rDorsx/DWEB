@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Jokenpo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>Pedra, Papel ou Tesoura</h1>
+
+  <div id="sobre">
+    <h2>Que jogo é esse?</h2>
+    <p>Jokenpo é um jogo clássico para 2 pessoas. Cada jogador escolhe pedra, papel ou tesoura. Aqui você joga contra a IA.</p>
+    <p>Pedra quebra tesoura.<br>
+    Tesoura corta papel.<br>
+    Papel cobre a pedra.<br>
+    Se escolherem a mesma coisa é empate e ninguém ganha ponto.</p>
+    <p>Quem chegar primeiro em 5 pontos ganha!</p>
+  </div>
+
+  <div id="inicio">
+    <button id="botaoJokenpo" onclick="comecar()">Jokenpo</button>
+  </div>
+
+  <div id="jogo" style="display: none;">
+
+    <h2>Você X IA</h2>
+    <h2 id="placar">Você 0 x 0 IA</h2>
+
+    <p>Escolha:</p>
+    <div id="caixas">
+      <div class="caixa" onclick="jogar(1)">✊<br>Pedra</div>
+      <div class="caixa" onclick="jogar(2)">✋<br>Papel</div>
+      <div class="caixa" onclick="jogar(3)">✌️<br>Tesoura</div>
+    </div>
+
+    <h3 id="escolhas"></h3>
+    <h2 id="resultado"></h2>
+
+    <button id="botaoReiniciar" onclick="reiniciar()" style="display: none;">Jogar de novo</button>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

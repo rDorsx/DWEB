@@ -1,0 +1,50 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: lightblue;
+  text-align: center;
+}
+
+#sobre {
+  background-color: white;
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+#inicio {
+  margin-top: 20px;
+}
+
+#botaoJokenpo {
+  font-size: 30px;
+  padding: 15px 40px;
+  background-color: yellow;
+  border: 3px solid black;
+  cursor: pointer;
+}
+
+#caixas {
+  display: flex;
+  justify-content: center;
+}
+
+.caixa {
+  font-size: 40px;
+  background-color: white;
+  border: 3px solid black;
+  width: 120px;
+  padding: 15px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.caixa:hover {
+  background-color: yellow;
+}
+
+#botaoReiniciar {
+  font-size: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
